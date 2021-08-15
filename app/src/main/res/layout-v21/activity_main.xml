@@ -11,7 +11,7 @@
         android:id="@+id/playerOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/player_one"
+        android:text="Player One"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
         android:textSize="20sp"
@@ -24,7 +24,7 @@
         android:id="@+id/playerTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/player_two"
+        android:text="Player Two"
         android:textStyle="bold"
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
@@ -37,7 +37,7 @@
         android:id="@+id/playerOneScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/_0"
+        android:text="0"
         android:textStyle="bold"
         android:textSize="25sp"
         app:layout_constraintTop_toBottomOf="@+id/playerOne"
@@ -49,7 +49,7 @@
         android:id="@+id/playerTwoScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/_0"
+        android:text="0"
         android:textStyle="bold"
         android:textSize="25sp"
         app:layout_constraintTop_toBottomOf="@+id/playerTwo"
@@ -61,7 +61,7 @@
         android:id="@+id/resetGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/reset"
+        android:text="Reset"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="604dp"
@@ -94,8 +94,7 @@
         app:layout_constraintTop_toBottomOf="@id/playerStatus"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="3dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="3dp" />
+        android:layout_marginTop="50dp"/>
 
 
     <Button
@@ -191,7 +190,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
-        android:text="@string/_2021_chinmay"
+        android:text="©2021 Chinmay"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
