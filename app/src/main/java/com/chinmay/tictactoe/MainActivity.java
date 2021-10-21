@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button [] buttons = new Button [9];
     private Button resetGame;
 
-    private int playerOneScoreCount, playerTwoScoreCount,rountCount;
+    private int playerOneScoreCount, playerTwoScoreCount,roundCount;
     boolean activePlayer;
 
     int [] gameState = {2,2,2,2,2,2,2,2,2};
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             buttons[i] = (Button) findViewById(resourceID);
             buttons[i].setOnClickListener(this);
         }
-        rountCount = 0;
+        roundCount = 0;
         playerOneScoreCount = 0;
         playerTwoScoreCount = 0;
         activePlayer = true;
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             ((Button)v).setTextColor(Color.parseColor("#70FFEA"));
             gameState[gameStatePointer] = 1;
         }
-        rountCount++;
+        roundCount++;
 
         if(checkWinner()){
             if(activePlayer){
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(this,"Player Two Won!",Toast.LENGTH_SHORT).show();
                 playAgain();
             }
-        }else if(rountCount == 9){
+        }else if(roundCount == 9){
             playAgain();
             Toast.makeText(this,"No Winner!",Toast.LENGTH_SHORT).show();
         }else{
@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         public void playAgain(){
-            rountCount = 0;
+            roundCount = 0;
             activePlayer =true;
 
             for(int i = 0;i < buttons.length; i++){
